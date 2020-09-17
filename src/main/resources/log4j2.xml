@@ -1,0 +1,16 @@
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss} [%t] [%-5level] %logger{36} - %msg%n"></PatternLayout>
+        </Console>
+        <File name="File" fileName="mevy-logs.log"  immediateFlush="true"  append="false">
+            <PatternLayout pattern="%d{HH:mm:ss} [%t] [%-5level] %logger{36} - %msg%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef  ref="Console" level="info"/>
+            <AppenderRef  ref="File" level="info"/>
+        </Root>
+    </Loggers>
+</Configuration>
