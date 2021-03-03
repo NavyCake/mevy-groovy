@@ -13,7 +13,7 @@ buildscript {
 
 
 group 'com.vally'
-version '1.1-BYE'
+version 'DISCONTINUED'
 
 
 apply plugin: 'groovy'
